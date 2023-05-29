@@ -12,29 +12,15 @@
 export default {
   data() {
     return {
-      transactions: [
-        {
-          id: 1,
-          name: "Shopping 17/05",
-          price: 200,
-        },
-        {
-          id: 2,
-          name: "House money",
-          price: 800,
-        },
-        {
-          id: 3,
-          name: "For meal",
-          price: 20,
-        },
-        {
-          id: 4,
-          name: "For work",
-          price: 150,
-        },
-      ],
+      transactions: [],
     };
+  },
+  created() {
+    fetch("http://localhost:3000/transactions")
+      .then((response) => response.json())
+      .then((data) => {
+        this.transactions = data;
+      });
   },
 };
 </script>

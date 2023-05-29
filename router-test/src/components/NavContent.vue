@@ -15,7 +15,7 @@
   top: 0;
   left: 0;
   right: 0;
-  height: 2rem;
+  height: 3rem;
   width: 100%;
   display: flex;
   margin-bottom: 0.5rem;
@@ -32,7 +32,8 @@
   color: #000;
 }
 
-.overview:hover {
+.overview:hover,
+.transactions:hover {
   cursor: pointer;
   background: #000;
   color: #fff;

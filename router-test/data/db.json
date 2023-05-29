@@ -11,13 +11,19 @@
       "price": 800
     },
     {
-      "id": 1,
+      "id": 3,
       "name": "For work activities",
       "price": 300
     },
     {
-      "id": 1,
+      "id": 4,
       "name": "For meal",
+      "price": 500
+    }
+    ,
+    {
+      "id": 5,
+      "name": "For do something",
       "price": 500
     }
   ]
